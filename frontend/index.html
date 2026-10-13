@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personality Text Analyzer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <h1>Personality Text Analyzer</h1>
+        <p>BIG FIVE PERSONALITY TRAIT PREDICTIONS <span>(0-100 Scale)</span></p>
+      </header>
+
+      <section class="analyzer-card">
+        <div class="input-column">
+          <h2>TEXT INPUT AREA</h2>
+          <textarea id="text-input" rows="12" placeholder="Type or paste text sample here (minimum 150 words)..."></textarea>
+          <p class="input-note">User provides textual data</p>
+          <div class="actions">
+            <button id="analyze-btn" type="button">SUBMIT FOR ANALYSIS</button>
+            <button id="clear-btn" type="button" class="secondary">Clear</button>
+          </div>
+        </div>
+
+        <section id="results" class="results-column">
+          <h2>PREDICTED TRAIT SCORES</h2>
+          <div id="trait-grid" class="trait-list"></div>
+        </section>
+      </section>
+
+      <section id="summary" class="summary-panel hidden">
+        <h2>PERSONALITY SUMMARY</h2>
+        <p id="summary-text"></p>
+      </section>
+
+      <section id="error" class="error hidden"></section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

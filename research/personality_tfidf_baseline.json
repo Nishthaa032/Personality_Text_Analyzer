@@ -1,0 +1,77 @@
+{
+  "description": "TF-IDF + Ridge regression baseline for five Big Five personality traits",
+  "selected_alpha": 1.0,
+  "candidates_tested": [
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0
+  ],
+  "trait_columns": [
+    "agreeableness",
+    "openness",
+    "conscientiousness",
+    "extraversion",
+    "neuroticism"
+  ],
+  "metrics": [
+    {
+      "split": "val",
+      "alpha": 1.0,
+      "mae_by_trait": {
+        "agreeableness": 23.93454330035936,
+        "openness": 16.57939976325116,
+        "conscientiousness": 24.87282447624043,
+        "extraversion": 25.51679680884149,
+        "neuroticism": 25.057577574379575
+      },
+      "rmse_by_trait": {
+        "agreeableness": 28.157355071471834,
+        "openness": 20.534364186170578,
+        "conscientiousness": 30.999038863846625,
+        "extraversion": 29.779185574701778,
+        "neuroticism": 29.228086901391606
+      },
+      "pearson_by_trait": {
+        "agreeableness": 0.25681407016894586,
+        "openness": 0.1627472583340736,
+        "conscientiousness": 0.17897342376144884,
+        "extraversion": 0.3676851489817934,
+        "neuroticism": 0.1752504451620571
+      },
+      "mean_mae": 23.192228384614403,
+      "mean_rmse": 27.739606119516488,
+      "mean_pearson": 0.22829406928166374
+    },
+    {
+      "split": "eval",
+      "alpha": 1.0,
+      "mae_by_trait": {
+        "agreeableness": 24.19247192090008,
+        "openness": 16.547030893643985,
+        "conscientiousness": 23.257677726454563,
+        "extraversion": 25.718379932580493,
+        "neuroticism": 24.639374190162826
+      },
+      "rmse_by_trait": {
+        "agreeableness": 28.182929609516584,
+        "openness": 20.492743562216663,
+        "conscientiousness": 29.369928825869895,
+        "extraversion": 29.858620590121227,
+        "neuroticism": 28.97643312104284
+      },
+      "pearson_by_trait": {
+        "agreeableness": 0.24492569060131236,
+        "openness": 0.1843223020312365,
+        "conscientiousness": 0.2657552188598729,
+        "extraversion": 0.31508249637846925,
+        "neuroticism": 0.23541005409999308
+      },
+      "mean_mae": 22.870986932748387,
+      "mean_rmse": 27.376131141753444,
+      "mean_pearson": 0.24909915239417685
+    }
+  ]
+}

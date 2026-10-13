@@ -1,0 +1,243 @@
+{
+  "dataset_root": "/Users/harshsmac/Desktop/Text_to_personality/data",
+  "verified_target_columns": [
+    "agreeableness",
+    "openness",
+    "conscientiousness",
+    "extraversion",
+    "neuroticism"
+  ],
+  "target_type": "continuous_big_five_scores",
+  "score_scale": "0-100 approximated percentile-like trait score",
+  "split_files": [
+    "train_set.csv",
+    "val_set.csv",
+    "eval_set.csv"
+  ],
+  "split_summaries": {
+    "train_set.csv": {
+      "rows": 16047,
+      "columns": [
+        "text",
+        "agreeableness",
+        "openness",
+        "conscientiousness",
+        "extraversion",
+        "neuroticism"
+      ],
+      "text_column": "text",
+      "missing_values": {
+        "text": 0,
+        "agreeableness": 0,
+        "openness": 0,
+        "conscientiousness": 0,
+        "extraversion": 0,
+        "neuroticism": 0
+      },
+      "duplicate_rows": 244,
+      "duplicate_texts": 2768,
+      "unique_text_count": 13279,
+      "trait_summary": {
+        "agreeableness": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 39.03676699694647,
+          "median": 39.0,
+          "std": 29.42156391532943
+        },
+        "openness": {
+          "min": 9.0,
+          "max": 98.0,
+          "mean": 67.66202405434038,
+          "median": 74.0,
+          "std": 22.7564674424748
+        },
+        "conscientiousness": {
+          "min": 1.0,
+          "max": 98.0,
+          "mean": 31.875428428989842,
+          "median": 23.0,
+          "std": 27.501908227534567
+        },
+        "extraversion": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 35.02128123636817,
+          "median": 24.0,
+          "std": 30.580323169783455
+        },
+        "neuroticism": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 46.6274381504331,
+          "median": 50.0,
+          "std": 28.066781866534228
+        }
+      }
+    },
+    "val_set.csv": {
+      "rows": 2415,
+      "columns": [
+        "text",
+        "agreeableness",
+        "openness",
+        "conscientiousness",
+        "extraversion",
+        "neuroticism"
+      ],
+      "text_column": "text",
+      "missing_values": {
+        "text": 0,
+        "agreeableness": 0,
+        "openness": 0,
+        "conscientiousness": 0,
+        "extraversion": 0,
+        "neuroticism": 0
+      },
+      "duplicate_rows": 15,
+      "duplicate_texts": 131,
+      "unique_text_count": 2284,
+      "trait_summary": {
+        "agreeableness": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 40.19792960662526,
+          "median": 45.0,
+          "std": 29.707775433029425
+        },
+        "openness": {
+          "min": 9.0,
+          "max": 98.0,
+          "mean": 67.14989648033126,
+          "median": 73.0,
+          "std": 23.257170024451074
+        },
+        "conscientiousness": {
+          "min": 1.0,
+          "max": 98.0,
+          "mean": 32.5703933747412,
+          "median": 26.0,
+          "std": 27.99159540474278
+        },
+        "extraversion": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 34.27060041407867,
+          "median": 22.0,
+          "std": 30.656487954049386
+        },
+        "neuroticism": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 46.40186335403727,
+          "median": 50.0,
+          "std": 28.12340258442107
+        }
+      }
+    },
+    "eval_set.csv": {
+      "rows": 2415,
+      "columns": [
+        "text",
+        "agreeableness",
+        "openness",
+        "conscientiousness",
+        "extraversion",
+        "neuroticism"
+      ],
+      "text_column": "text",
+      "missing_values": {
+        "text": 0,
+        "agreeableness": 0,
+        "openness": 0,
+        "conscientiousness": 0,
+        "extraversion": 0,
+        "neuroticism": 0
+      },
+      "duplicate_rows": 14,
+      "duplicate_texts": 137,
+      "unique_text_count": 2278,
+      "trait_summary": {
+        "agreeableness": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 40.31987577639752,
+          "median": 45.0,
+          "std": 29.346496053641506
+        },
+        "openness": {
+          "min": 9.0,
+          "max": 98.0,
+          "mean": 68.17805383022774,
+          "median": 74.0,
+          "std": 22.69167208765697
+        },
+        "conscientiousness": {
+          "min": 1.0,
+          "max": 98.0,
+          "mean": 32.81014492753623,
+          "median": 26.0,
+          "std": 27.561335337190457
+        },
+        "extraversion": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 35.52008281573499,
+          "median": 24.0,
+          "std": 30.821497539090153
+        },
+        "neuroticism": {
+          "min": 0.0,
+          "max": 99.0,
+          "mean": 45.9184265010352,
+          "median": 48.0,
+          "std": 27.904138847344544
+        }
+      }
+    }
+  },
+  "cross_split_overlap": {
+    "split_1__split_2": {
+      "overlap_text_count": 1811,
+      "left_rows": 16047,
+      "right_rows": 2415,
+      "ratio_left": 0.112856,
+      "ratio_right": 0.749896,
+      "examples": [
+        "1 movie inception2 book the catcher in the rye3 tv series community4 anime na5 song right now see the wind by polar bear club youtuber was epic meal time before it got super ridiculous7 food sushi8 place a nice beach on a summer night or somewhere green and foggy9 celebrity joseph gordonlevitt maybe not even fair how talented he is10 memory playing packed diy punk shows with my old band in high school",
+        "1 not israeli kids these kids are from waziristan on the afghani border of pakistan reverse image search it on google source the taqiyah skull cap or its more secular variant the kufi is a traditional islamic headpiece commonly worn in africa and the middle east its often worn in conjunction with the salwar kameez the national dress of pakistan so not a yarmulke which are usually shorter3 are you telling me that israelis dont know how to teach their kids to hold a pistol that is without a doubt the worst form ive ever seen from anybody holding a handgun ridiculous4 dude seriously what nation is more likely to buy guns before shoes israeli kids dont walk around barefoot in traditional muslim garb5 islam awazi is not an israeli news networkyour points are ridiculous poorly researched and from that i conclude made in bad faith gloriousachievements out",
+        "10 power up front 3 power all 9 structures on the map 37 power and its cursed i dunno its pretty bad",
+        "18 im mooching off my parents until i deploy",
+        "1million usd bank account balanceim not greedy i could retire off that if i invested it properly and lived a modest lifestyle"
+      ]
+    },
+    "split_1__split_3": {
+      "overlap_text_count": 1806,
+      "left_rows": 16047,
+      "right_rows": 2415,
+      "ratio_left": 0.112544,
+      "ratio_right": 0.747826,
+      "examples": [
+        "1 sun and moon had the most cinematic story yet with a wide range of interesting characters the only major problem is the protagonists facial expression2 black and white presented an interesting moral dilemma although team plasma seemed a little too comically evil for this to work perfectly the characters were very interesting and the climax actually taking place at the end of the main story was nice3 omega ruby and alpha sapphire these remakes really fleshed out the characters and improved the story and it added the delta episode tooif were including spinoffs then pokemon mystery dungeon explorers of sky would take the cake but i havent played super mystery dungeon yet",
+        "1 you probably know that most mbti tests are bs well the enneagram tests are 10 times more bs2 the 5 is mostly apathetic and neutralindifferent to most of these things the thing about here that makes it a 4 is that types 234 are all pretty much attention whores they all try to maintain a sense of image they feel that their image and sense of self is broken and they need validation to maintain their sense of self otherwise they will start feeling shame and thinking theyre worthless the 4 tries to make a tragedy out of everything so they can gain peoples attention all they want to is to be told theyre special and unique and some other edgy shit if you see any more of this edgy 4 behavior try to make them feel special it will really raise both of your moods here is a really good article about enneagram types under express their feelings preferring indirect methods to share and communicate what they feel fours spend a great deal of energy directing their selfimage inward fours are seeking their true identity and are trying to make sure that it is based on their inner feelings and imagination fours reject many of their positive qualities and common characteristics that they share with others its hard to be unique if you are like others fours seek attention through withdrawal which may at first seem like a contradiction fours withdraw to pull others in especially into their inner world they want others to notice their depth of character and to obtain sympathy for what they feel is their unjust suffering fours believe that life has dealt them a bad hand and their underlying feeling of shame may lead to hostility against life despair in addition they may feel hostility at their parents or others in their past themselves for being defective and at others for not recognizing how special the four is",
+        "1k cp not 1k of each pokemon right",
+        "2 star magneto ai uses him and his blue blows up most of the board i use it and its in a corner or at least at the very leftright edge every single goddamn time i dont think ive ever seen it do more than about 300 damage for me usually less than 200",
+        "2000 to me is surviving another 2 months without selling my house though i think its inevitable there are no jobs for what i do where im at and being laid off after 15 years just plain sucksthe only investments i have are in the house and rrspssorry i kinda ragged on you losing money but anyone who has no debt and can invest doesnt really need to worry in the immediate future i thinki personally hate thinking or worrying about money i didnt think or worry about it when i had a job but i wasnt dumb with the money either rfrugal rbifl are two of my fave subs but when you got little to no income its always kinda weighing on you"
+      ]
+    },
+    "split_2__split_3": {
+      "overlap_text_count": 199,
+      "left_rows": 2415,
+      "right_rows": 2415,
+      "ratio_left": 0.082402,
+      "ratio_right": 0.082402,
+      "examples": [
+        "7 what marley heard from that event through the radio that the warriors carried with them8 the reaction of the horses on that event9 a topdown view10 a shot taken from the ground looking upward",
+        "a chemistry diploma is any case is a good start there is more than enough work to be found in this field start looking around for post doc positions at universities if you want to go the academic route but if you dont look for the big multinationals shell akzo nobel asml dsm pharma industry etc these companies usually have positions open for chemistrychemeng students and considering their international culture the language requirements arent that strict as with smaller companiesi believe in the us when you do graduate school you do a combined mastersphd track depending on how far along you are you can also have a look at taking out your masters and do a phd in the netherlands for example as phd over here are employees who receive a salary not students it is a competitive market though",
+        "a civilization where that has to happen every few years is not a good civilization",
+        "after reddit started liking donald trump the floodgates opened",
+        "and so wouldnt 144hzi didnt say that 60hz had advantages or a disadvantage the refresh rate is literally irrelevant to the tickrate and what happens in the game that is what i saidwhat i said was that the problem why we dont have 128 tick in mm is the fact that most people have a latency of 50 ms in cs which is hugely not beneficial on 128 tick it is rather unfair if compared with a person who has a 5ms latency and fps have nothing to do with tickrate at least if people can use the right rates"
+      ]
+    }
+  }
+}

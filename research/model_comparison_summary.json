@@ -1,0 +1,44 @@
+{
+  "project_scope": "personality-only",
+  "verified_constraints": [
+    "The workspace contains only a personality dataset; emotion labels are absent.",
+    "The emotion task remains deferred until the exact GoEmotions dataset and schema are provided."
+  ],
+  "models": {
+    "tfidf_ridge": {
+      "description": "TF-IDF + Ridge regression baseline",
+      "validation": {
+        "mean_mae": 23.192228384614403,
+        "mean_rmse": 27.739606119516488,
+        "mean_pearson": 0.22829406928166374
+      },
+      "evaluation": {
+        "mean_mae": 22.870986932748387,
+        "mean_rmse": 27.376131141753444,
+        "mean_pearson": 0.24909915239417685
+      }
+    },
+    "distilbert": {
+      "description": "DistilBERT regression candidate",
+      "validation": {
+        "mean_mae": 23.853544235229492,
+        "mean_rmse": 27.304615020751953,
+        "mean_pearson": -0.023689822060987353
+      },
+      "evaluation": {
+        "mean_mae": 27.8010196685791,
+        "mean_rmse": 31.79408836364746,
+        "mean_pearson": -0.1306738793849945
+      }
+    }
+  },
+  "winner_by_validation": {
+    "model": "TF-IDF + Ridge",
+    "reason": "Lower MAE and higher Pearson correlation are preferred for this regression task."
+  },
+  "winner_by_evaluation": {
+    "model": "TF-IDF + Ridge",
+    "reason": "Lower MAE and higher Pearson correlation are preferred for this regression task."
+  },
+  "conclusion": "On the verified personality dataset in this workspace, the TF-IDF + Ridge baseline remains the strongest model under current evidence; the DistilBERT candidate is functional but does not outperform the baseline on MAE or Pearson."
+}

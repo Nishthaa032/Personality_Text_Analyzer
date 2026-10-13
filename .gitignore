@@ -1,0 +1,8 @@
+# Local model artifacts can be hundreds of megabytes.
+models/personality_distilbert/distilbert_personality_regression/
+*.safetensors
+
+# Generated local data and caches
+__pycache__/
+.pytest_cache/
+.DS_Store

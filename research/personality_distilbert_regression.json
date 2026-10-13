@@ -1,0 +1,73 @@
+{
+  "description": "DistilBERT fine-tuning regression baseline for five Big Five personality traits",
+  "model_name": "distilbert-base-uncased",
+  "epochs": 1,
+  "learning_rate": 1e-05,
+  "batch_size": 2,
+  "max_length": 128,
+  "target_normalization": true,
+  "trait_columns": [
+    "agreeableness",
+    "openness",
+    "conscientiousness",
+    "extraversion",
+    "neuroticism"
+  ],
+  "metrics": [
+    {
+      "split": "val",
+      "mae_by_trait": {
+        "agreeableness": 27.611038208007812,
+        "openness": 19.664939880371094,
+        "conscientiousness": 21.17814064025879,
+        "extraversion": 28.712072372436523,
+        "neuroticism": 27.09408187866211
+      },
+      "rmse_by_trait": {
+        "agreeableness": 30.85106658935547,
+        "openness": 22.776165008544922,
+        "conscientiousness": 25.621986389160156,
+        "extraversion": 30.6746883392334,
+        "neuroticism": 29.773284912109375
+      },
+      "pearson_by_trait": {
+        "agreeableness": -0.05024590715765953,
+        "openness": -0.14428918063640594,
+        "conscientiousness": -0.3585480749607086,
+        "extraversion": -0.14389681816101074,
+        "neuroticism": -0.25690069794654846
+      },
+      "mean_mae": 24.852054595947266,
+      "mean_rmse": 27.939441680908203,
+      "mean_pearson": -0.19077613577246666
+    },
+    {
+      "split": "eval",
+      "mae_by_trait": {
+        "agreeableness": 26.879955291748047,
+        "openness": 21.98440933227539,
+        "conscientiousness": 30.45647621154785,
+        "extraversion": 28.85740089416504,
+        "neuroticism": 30.218952178955078
+      },
+      "rmse_by_trait": {
+        "agreeableness": 30.67938232421875,
+        "openness": 24.030231475830078,
+        "conscientiousness": 36.8379020690918,
+        "extraversion": 31.545162200927734,
+        "neuroticism": 33.30536651611328
+      },
+      "pearson_by_trait": {
+        "agreeableness": 0.07582113146781921,
+        "openness": -0.07785861194133759,
+        "conscientiousness": 0.28940972685813904,
+        "extraversion": -0.045600976794958115,
+        "neuroticism": -0.30333414673805237
+      },
+      "mean_mae": 27.6794376373291,
+      "mean_rmse": 31.27960777282715,
+      "mean_pearson": -0.012312575429677963
+    }
+  ],
+  "model_dir": "/Users/harshsmac/Desktop/Text_to_personality/models/personality_distilbert/distilbert_personality_regression"
+}
